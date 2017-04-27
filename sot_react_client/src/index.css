@@ -1,5 +1,45 @@
-body {
+body * {
+  box-sizing: border-box;
+}
+
+.App {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header {
+  width: 100vw;
+  background-color: navy;
+  color: white;
+}
+
+.show-div {
+  width: 100px;
+  background-color: white;
+  color: black;
+  flex-grow: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.control-panel {
+  width: 400px;
+  flex-grow: 0;
+  background-color: silver;
+  color: black;
+  height: 100vh;
+}
+
+.preview-div {
+  width: 70%;
+  height: 30%;
 }
